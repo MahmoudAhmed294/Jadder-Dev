@@ -1,0 +1,42 @@
+@media only screen and (max-width: 992px) {
+  .nav_style {
+    overflow-y: scroll !important;
+    position: relative !important; }
+  .navbar-brand {
+    margin-right: 0; }
+  .Con_i_media {
+    margin-left: 18px !important; }
+  .dropdown-menu {
+    text-align: center !important;
+    width: auto !important; }
+  .dropdown-menu::-webkit-scrollbar {
+    width: 0 !important;
+    background-color: #f5f5f5; } }
+
+@media only screen and (max-width: 1030px) {
+  .bottom-right .bottom_pen {
+    right: 44% !important; } }
+
+@media only screen and (max-width: 1290px) {
+  .red--pen {
+    display: none !important; }
+  .black--pen {
+    display: none !important; } }
+
+@media only screen and (max-width: 702px) {
+  .bottom-right {
+    width: 50% !important;
+    height: 40% !important;
+    right: -47px !important; } }
+
+@media only screen and (max-width: 540px) {
+  .bottom_pen {
+    width: 72% !important; } }
+
+@media only screen and (max-width: 444px) {
+  .bottom-right, .note--bg, .pencil, .top-right {
+    display: none; } }
+
+@media only screen and (max-width: 444px) {
+  .course-Detail {
+    margin-right: 10px; } }

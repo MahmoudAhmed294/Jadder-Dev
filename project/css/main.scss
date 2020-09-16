@@ -1,0 +1,1006 @@
+/*
+01. RESET CSS
+02. BASE TYPOGRAPHY
+03. MY CLASS CSS
+04. loader
+05.nav
+06.Section-1  revolution
+07.section 2   خدمتنا
+08.08.section 3   اصنع مهنيك
+09.section 4  فرصتك القادمه
+10.section 5  عدد العملاء و الدورات
+11.section 6  شركاؤنا
+12.section 7  تواصل معنا
+13.section 8 الخرائط  (no code)
+14.section 9 Footer
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+*/
+
+/* -----------------------------------------
+			   01. RESET CSS
+-------------------------------------------- */
+@import "loader.scss";
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
+@import "login.scss";
+@import "ask.scss";
+@import "course.scss";
+@import "CourseDetails.scss";
+@import "responsive.scss";
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+html {
+    overflow-y: scroll;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* -----------------------------------------
+           02. BASE TYPOGRAPHY
+-------------------------------------------- */
+
+
+/* color gader*/
+:root {
+    --text-1: #384141;
+    /*<<<< text color*/
+    --text-2: #bbbbbb;
+    /*<<<< text color*/
+    --color-1: #b2cb21;
+    --color-h: rgb(79, 184, 170);
+    --color-2: #cace8e;
+    --color-3: #006c35;
+    --color-4: #93ebd7;
+    --white: #ffffff;
+    --gary: #f6f6f6;
+    --color-6: #2a5377;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-1);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+    overflow-x: hidden;
+    line-height: 1.75;
+    font-family: "Markazi Text", serif !important;
+}
+
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+p {
+    margin-bottom: 0;
+
+}
+
+/*========================================
+        03. my  CLASS CSS
+==========================================*/
+
+.text-1 {
+    color: var(--text-1);
+    /*<<<< text color*/
+
+}
+
+.text-2 {
+    color: var(--text-2) !important;
+    /*<<<< text color*/
+}
+
+.bg-l-green {
+    background-color: var(--color-1);
+}
+
+.bg-l-gray {
+    background-color: var(--gary);
+}
+
+.white-bg {
+    background: var(--white);
+}
+
+a {
+    color: #333333;
+}
+
+a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.i-16:before {
+    font-size: 15px !important;
+}
+
+.btn {
+    border: none;
+    text-align: center;
+    transition: 0.5s ease;
+    padding: 10px;
+    height: 48px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--color-h);
+}
+
+.pt-7r {
+    padding-top: 7.5rem;
+}
+
+/*=================================
+                05.nav
+====================================*/
+
+.nav_style {
+    position: relative;
+    direction: rtl;
+    align-items: center;
+    text-align: center;
+    z-index: 250;
+    background: white;
+    padding: 10px;
+}
+
+//? img style 
+.c_logo {
+    padding: 10px;
+}
+
+.s-img {
+    max-width: 120px;
+  max-height: 100px;
+  height: 45%;
+  width: 75%;
+  min-width: 90px;
+  max-height: 80px;
+}
+
+.l-nav {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 0 !important;
+}
+
+.l-nav li {
+    padding: 5px;
+    margin: 12px;
+    font-size: 20px;
+}
+
+.line-Hover::after {
+    content: "";
+    display: block;
+    background-color: var(--text-1);
+    width: 0%;
+    height: 1.4px;
+    transition: 0.5s ease;
+
+}
+
+.w-100_after--line-Hover::after {
+    width: 100%;
+}
+
+.line-Hover:hover::after {
+    transition: 0.5s ease;
+    width: 100%;
+
+}
+
+/* Drob down menu for nav*/
+.dropdown-menu {
+    border-top: none;
+    border-left: none;
+    text-align: right;
+    transform: translate3d(10px, 25px, 0px) !important;
+    right: 0 !important;
+    font-size: 16px;
+    height: fit-content;
+    max-height: 80vh;
+    overflow-y: scroll;
+    width: fit-content;
+    padding: 5px 5px;
+}
+
+.dropdown-menu a {
+    padding: 5px !important;
+}
+
+/*scroll style for drob down menu*/
+.dropdown-menu::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(79, 184, 170);
+    color: white;
+    transition: 0.5s ease;
+}
+
+/*icon if drob down */
+.dropdown-toggle::after {
+    content: "\f10d";
+    font-family: Flaticon;
+    border: none;
+    vertical-align: 0;
+    font-size: 10px;
+}
+
+/*
+social media icon
+
+*/
+.Con_i_media {
+    padding: 0 5px;
+    margin-left: 100px;
+
+}
+
+.i_media {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+.i_media i::before {
+    font-size: 18px;
+}
+
+.i_media:nth-child(1):hover {
+    /* youtube*/
+    background-color: var(--color-1);
+    color: white;
+}
+
+.i_media:nth-child(2):hover {
+    /* twitter*/
+    color: var(--color-4);
+}
+
+.i_media:nth-child(3):hover {
+    /* instgaram*/
+    color: #e83e8c;
+}
+
+.nav--Scroll_animation {
+    animation: down 1s ease;
+    box-shadow: 5px 1px 15px;
+}
+
+@keyframes down {
+    from {
+        display: none;
+        opacity: 0;
+
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/*=================================================================
+                6.Section-1  revolution
+============================================================*/
+#bg--animation {
+    background-image: url("../img/transparent-bg-1.webp");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    direction: ltr;
+    position: relative;
+
+
+
+        
+
+        }
+
+.note--bg {
+    background-image: url("../img/papers.webp");
+    height: 100%;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 360px;
+    left: -349px;
+
+}
+.pencil {
+    background-image: url("../img/top_left.webp");
+    height: 100%;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -142px;
+    background-position-y: -51px;
+}
+
+
+    .red--pen {
+        background-image: url("../img/header_edding.webp");
+        width: 190px;
+        height: 300px;
+        margin-left: 29%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        // margin-top: -57px;
+    
+    }
+    .black--pen {
+        background-image: url("../img/header_marker.webp");
+                    height: 200px;
+        width: 190px;
+        margin-left: 25%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .content-center {
+        position: absolute;
+        max-width: fit-content;
+        left: 50%;
+        margin-left: -98px;
+        top: 50%;
+        margin-top: -50px;
+      
+        z-index: 100;
+        height: 60%;
+    
+        .content--text {
+            text-align: center;
+        }
+
+    }
+
+
+        .top-right {
+            background-image: url("../img/top_right.webp");
+            height: 45%;
+            width: 66%;
+            background-position-x: right;
+
+                    background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+
+        .bottom-right {
+            background-image: url("../img/bottom_right.webp");
+            height: 50%;
+            width: 421px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: -158px;
+            bottom: 0;
+
+            .bottom_pen {
+                background-image: url("../img/bottom_pen.webp");
+                height: 100%;
+                width: 59%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 350px;
+                top: -89px;
+            }
+        }
+    
+
+.border--GoDown {
+    border: rgba(0, 0, 0, 0.5) 1.5px solid;
+    width: 20px;
+    height: 35px;
+    border-radius: 25px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 62px;
+    left: 45%;
+    display: block;
+    right: 45%;
+    z-index: 200;
+    transition: 0.5s;
+}
+
+.GoDown {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    border-radius: 50%;
+    margin: 5px auto;
+    -webkit-animation: goDown 2s infinite linear;
+    -o-animation: goDown 2s infinite linear;
+    animation: goDown 2s infinite linear;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes goDown {
+
+    0%,
+    25%,
+    50% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@-o-keyframes goDown {
+
+    0%,
+    25%,
+    50% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes goDown {
+
+    0%,
+    25%,
+    50% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*=================================
+7.section 2   خدمتنا
+=====================================*/
+.T-content {
+    margin: 90px auto 50px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.T-sec2 {
+    margin-bottom: -0.5rem;
+}
+
+.L-sec-2-T {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-1);
+}
+
+.L-sec-2-T::before {
+    content: "";
+    display: flex;
+    width: 75%;
+    height: 4px;
+    background-color: var(--color-1);
+    align-items: center;
+    margin: -2px auto 0 auto;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.type-services {
+    width: 350px;
+    text-align: center;
+    height: 125px;
+    padding: 22px 10px 10px 10px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tit-sm {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-1);
+}
+
+/* on hover*/
+.type-services:hover {
+    transition: 0.3s ease-in;
+    background-color: var(--color-1);
+    color: white;
+}
+
+.type-services:hover p {
+    color: white !important;
+}
+
+.type-services:hover p:last-child {
+    transition: 1.25s ease;
+}
+
+/*=================================
+=====================================
+
+08.section 3   اصنع مهنيك
+======================================
+=====================================*/
+
+.sec-3 {
+    margin-top: 100px;
+    background: url("../img/sec3.webp") fixed center center no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+.content-sec-3 {
+    text-align: center;
+    padding: 23.5vh 0;
+    color: white;
+}
+
+.btn-sec-3 {
+    width: 22vh;
+    border-radius: 25px;
+    color: white;
+    border: 1px white solid;
+}
+
+.btn-sec-3:hover {
+    background: white;
+    color: var(--text-1);
+}
+
+/*=================================
+=====================================
+
+09.section 4  فرصتك القادمه
+======================================
+=====================================*/
+.sec-4 {
+    padding: 7.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.filter-input {
+    background-color: var(--gary);
+    padding: 3rem;
+    width: 100%;
+}
+
+.filter-search {
+    align-items: start;
+    justify-content: center;
+}
+
+.inpt-filter {
+    border: none;
+    border-bottom: 1px var(--text-1) solid;
+    margin: 15px;
+    padding: 10px;
+    color: var(--text-1);
+    min-width: 100px;
+    width: 160px;
+    height: 48px;
+    background-color: white;
+
+}
+
+.inpt-filter:focus {
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--color-1);
+    color: white;
+    min-width: 100px;
+    width: 160px;
+    margin: 15px;
+}
+
+/*======================================
+10.section 5  عدد العملاء و الدورات
+====================================*/
+.sec-5 {
+    margin-top: 100px;
+    background: url("../img/sec5.webp") fixed no-repeat;
+    background-size: cover;
+    padding: 7.5rem 0;
+    background-position: center center;
+    width: 100%;
+
+}
+
+
+.content-sec-5 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.num-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.num-content i:before {
+    font-size: 2.5rem;
+}
+
+.num-content p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-i {
+    color: #4fb8aa;
+}
+
+.book-i {
+    color: #b2cb20;
+}
+
+.watch-i {
+    color: #e84455;
+    font-weight: 900;
+}
+
+.smile-i {
+    color: #e16a08;
+    font-weight: 900;
+}
+
+/*==============================
+11.section 6  شركاؤنا
+================================*/
+.sec-6 {
+    margin-bottom: 100px;
+    background-color: #f6f6f6;
+    padding: 7.5rem 0;
+}
+
+.owl-carousel {
+    direction: ltr;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-item {
+    float: none;
+    width: 22rem !important;
+}
+
+.card {
+    border: none;
+    direction: rtl;
+    text-align: center;
+}
+
+.bg-T-img {
+    background-color: #f6f6f6;
+}
+
+.H-img {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 143px;
+    left: 0;
+    right: 0;
+}
+
+.H-img:hover {
+    transition: 0.7s ease-in-out;
+    background: rgba(79, 184, 170, 0.54);
+}
+
+.H-img:hover .i_media-sec-6:nth-child(1),
+.H-img:hover .i_media-sec-6:nth-child(2) {
+    opacity: 1;
+    top: 45%;
+}
+
+.i_media-sec-6 {
+    position: absolute;
+    z-index: 200;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0;
+}
+
+.i_media-sec-6:nth-child(1) {
+    /* twitter*/
+    top: 35%;
+    right: 35%;
+    transition: ease-in-out 0.3s;
+}
+
+.i_media-sec-6:nth-child(2) {
+    /* instgaram*/
+    top: 35%;
+    right: 50%;
+    transition-delay: 0.2s;
+    /*transition: ease-in-out 0.5s ;*/
+}
+
+.i_media-sec-6:nth-child(1):hover {
+    /* twitte hover*/
+    background: var(--color-4);
+    color: #ffffff;
+}
+
+.i_media-sec-6:nth-child(2):hover {
+    /* instgaram hover*/
+    background: #e83e8c;
+    color: #ffffff;
+}
+
+.r-45 {
+    right: 45% !important;
+}
+
+/*==================================================================
+12.section 7  تواصل معنا
+=================================================================*/
+.SocialMedia {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 6.5rem 0;
+    /* ????  */
+}
+
+.sec7-Twitter {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white !important;
+    background-color: #35b2e2;
+    line-height: 60px;
+}
+
+.sec7-Twitter i:before {
+    font-size: 25px;
+}
+
+.sec7-instagram {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white !important;
+    background-color: #734c9d;
+    line-height: 60px;
+}
+
+.sec7-instagram i:before {
+    font-size: 25px;
+}
+
+.sec7-youtube {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white !important;
+    background-color: #d81f27;
+    line-height: 60px;
+}
+
+.sec7-youtube i:before {
+    font-size: 25px;
+}
+
+.sec7-whatsapp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white !important;
+    background-color: #2aa53a;
+    line-height: 60px;
+}
+
+.sec7-whatsapp i:before {
+    font-size: 25px;
+}
+
+.input-con {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+}
+
+.inp-ContentAs {
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+    padding: 10px;
+    margin: 15px 0;
+    outline: none;
+    width: 100%;
+}
+
+.btn-send {
+    border-radius: 25px;
+    color: white;
+    margin: 20px 0;
+    background-color: var(--color-1);
+    height: 50px;
+}
+
+/*=====================================
+13.section 9 Footer
+========================================*/
+#footer {
+    background-color: var(--text-1);
+    width: 100%;
+    padding: 7.5rem 0;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer h4 {
+    color: white;
+}
+
+#footer i {
+    color: white;
+}
+
+.Footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.T-footer {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.line-footer {
+    background-color: #ffffff;
+}
+
+.line-footer::before {
+    margin: -2px 0 0 auto;
+    background-color: #ffffff;
+    width: 25%;
+}
+
+.F_links {
+    column-count: 2;
+    text-align: right;
+}
+
+.point-hover {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    transform: scaleX(0);
+}
+
+.F_links li:hover .point-hover {
+    transition: 0.5s;
+    transform: scaleX(1);
+}
+
+.i-footer {
+    border: #ffffff 1px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding: 1px;
+    display: block;
+    text-align: center;
+}
+
+.i-footer:hover {
+    transition: 0.5s ease;
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+.h-Footer-link:hover {
+    transition: 0.7s ease;
+    color: var(--color-1) !important;
+}

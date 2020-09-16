@@ -1,0 +1,77 @@
+.course-Detail {
+    border-radius: 5px;
+    box-shadow: 0 0 10px #d1d1d1;
+    text-align: right;
+    margin-bottom: 30px;
+    padding: 0 !important;
+    margin-left: 10px;
+
+    p {
+        padding-bottom: 2px;
+        font-size: 16px;
+    }
+}
+.text-shopping {
+    padding: 25px 15px;
+}
+.books {
+    padding: 5px;
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+.circle-shopping {
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+    transform: rotate(50deg) scale(1.5);
+
+
+}
+
+.i-shopping {
+    color: white;
+    padding: 18px 29px;
+    display: block;
+
+}
+
+.i-shopping:before {
+    font-size: 50px;
+}
+
+.course-Detail:hover .books {
+    transition: 0.6s ease;
+    background-color: #72C9BF;
+    opacity: 1;
+
+}
+
+.course-Detail:hover .circle-shopping {
+    transition: 0.6s ease;
+    opacity: 1;
+    background-color: #b2cb21;
+    width: 80px;
+    height: 80px;
+    transform: rotate(0deg) scale(1);
+
+}
+
+.course-Detail:hover .i-shopping {
+    transition: 0.6s ease;
+    opacity: 1;
+
+}
+
+.course-Detail:hover .i-shopping:before {
+    font-size: 25px;
+
+}
+

@@ -1,0 +1,54 @@
+.CD_text {
+  text-align: right;
+  color: #a5a5a5;
+  padding-top: 10px; }
+
+.post_on {
+  display: flex;
+  padding: 3px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white !important;
+  line-height: 35px; }
+
+.post_on i {
+  margin: 0 5px; }
+
+.Face {
+  background-color: #007BFF; }
+
+.Email {
+  background-color: #DC3545; }
+
+.Twitter {
+  background-color: #17A2B8; }
+
+.detalis-btn {
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none; }
+
+.detalis-btn:nth-child(1) {
+  background-color: #D1D1D1; }
+
+.detalis-btn:nth-child(2) {
+  background-color: #4FB8AA; }
+
+.detalis-btn:nth-child(3) {
+  background-color: #E84455; }
+
+.de-content {
+  border: 1px solid  #D1D1D1;
+  padding: 20px  10px;
+  text-align: right;
+  color: #A5A5A5;
+  font-size: 20px; }
+
+.img_CD {
+  width: 100%;
+  height: 100%; }
